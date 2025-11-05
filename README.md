@@ -101,3 +101,15 @@ Shows post details in styled card format
 ## 📸 Screenshots
 
 ![Main Page Screenshot](public/assets/mainPage.png)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/quora-clone.git
+   cd REST
+2. **To run the code**
+   http://localhost:3000/posts
+
