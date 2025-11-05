@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Post | Quora Clone</title>
+  <link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+  <div class="navbar">Quora Clone</div>
+
+  <h2>Create a New Post</h2>
+
+  <form action="/posts" method="post" class="post-form">
+    <label for="username">Your Name</label>
+    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+    <label for="content">Post Content</label>
+    <textarea id="content" name="content" placeholder="Write your post..." required></textarea>
+
+    <button type="submit" class="submit-btn">Post</button>
+  </form>
+</body>
+</html>

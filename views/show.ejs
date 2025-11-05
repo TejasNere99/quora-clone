@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Post | Quora Clone</title>
+  <link rel="stylesheet" href="/css/show.css">
+</head>
+<body>
+  <div class="navbar">Quora Clone</div>
+
+  <h2>Your Post in Detail</h2>
+
+  <div class="post-detail">
+    <p class="label">Post ID:</p>
+    <p class="value"><%= post.id %></p>
+
+    <p class="label">User Name:</p>
+    <p class="username"><%= post.username %></p>
+
+    <p class="label">Post Content:</p>
+    <p class="content"><%= post.content %></p>
+
+    <div class="actions">
+      <button onclick="window.history.back()">← Back</button>
+    </div>
+  </div>
+</body>
+</html>

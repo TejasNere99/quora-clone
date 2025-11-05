@@ -1,0 +1,145 @@
+/* -------------------------------------
+   Quora Clone - Edit Post Page
+   Consistent with Add & Detail pages
+   ------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* -----------------------------
+   Navbar (same as others)
+   ----------------------------- */
+.navbar {
+  width: 100%;
+  background-color: #b92b27;
+  color: white;
+  padding: 14px 25px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* -----------------------------
+   Page Heading
+   ----------------------------- */
+h2 {
+  margin: 30px auto 20px auto;
+  text-align: center;
+  font-weight: 600;
+  color: #2d2d2d;
+  border-bottom: 3px solid #b92b27;
+  width: fit-content;
+  padding-bottom: 8px;
+}
+
+/* -----------------------------
+   Edit Form Container
+   ----------------------------- */
+.edit-form {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  margin: 25px auto;
+  padding: 25px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* -----------------------------
+   Label & Textarea
+   ----------------------------- */
+label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #222;
+  min-height: 160px;
+  resize: vertical;
+  line-height: 1.6;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  border-color: #b92b27;
+  box-shadow: 0 0 0 3px rgba(185, 43, 39, 0.15);
+  outline: none;
+}
+
+/* -----------------------------
+   Buttons Section
+   ----------------------------- */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 10px 16px;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Save Button */
+.save-btn {
+  background-color: #b92b27;
+  color: #fff;
+}
+.save-btn:hover {
+  background-color: #a02421;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: transparent;
+  color: #555;
+  border: 1px solid #bbb;
+}
+.cancel-btn:hover {
+  border-color: #b92b27;
+  color: #b92b27;
+}
+
+/* -----------------------------
+   Responsive Design
+   ----------------------------- */
+@media (max-width: 600px) {
+  .edit-form {
+    width: 95%;
+    padding: 18px;
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,136 @@
+/* --------------------------------------
+   Quora Clone - Post Detail Page
+   Matches main feed styling
+   -------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* -----------------------------
+   Navbar (same red top bar)
+   ----------------------------- */
+.navbar {
+  width: 100%;
+  background-color: #b92b27;
+  color: white;
+  padding: 14px 25px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* -----------------------------
+   Heading
+   ----------------------------- */
+h2 {
+  margin: 30px auto 10px auto;
+  text-align: center;
+  font-weight: 600;
+  color: #2d2d2d;
+  border-bottom: 3px solid #b92b27;
+  width: fit-content;
+  padding-bottom: 8px;
+}
+
+/* -----------------------------
+   Post Detail Container
+   ----------------------------- */
+.post-detail {
+  width: 90%;
+  max-width: 700px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  margin: 25px auto;
+  padding: 25px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.25s ease-in-out;
+}
+
+.post-detail:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* -----------------------------
+   Labels (like "Post Id", etc.)
+   ----------------------------- */
+.label {
+  color: #555;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.value {
+  color: #222;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* -----------------------------
+   Username (consistent red)
+   ----------------------------- */
+.username {
+  color: #b92b27;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+/* -----------------------------
+   Post Content
+   ----------------------------- */
+.content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+/* -----------------------------
+   Back Button or Actions
+   ----------------------------- */
+.actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.actions button {
+  border: 1px solid #b92b27;
+  background: transparent;
+  color: #b92b27;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.actions button:hover {
+  background-color: #b92b27;
+  color: #fff;
+}
+
+/* -----------------------------
+   Responsive Design
+   ----------------------------- */
+@media (max-width: 600px) {
+  .post-detail {
+    width: 95%;
+    padding: 18px;
+  }
+  .content {
+    font-size: 0.95rem;
+  }
+}
